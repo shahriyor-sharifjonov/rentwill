@@ -1,1 +1,30 @@
 //Кнопки
+@use '../abstracts/colors' as color;
+.btn{
+    background: color.$btn-bg;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 17px;
+    text-align: center;
+    color: color.$btn-color;
+    text-decoration: none;
+    border-radius: 70px;
+    box-shadow: 0px 4px 0px 0px #0AA307;
+    transition:  200ms ease;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 30px 65px;
+    &:active{
+        box-shadow: 0 0 0 0 #0AA307;
+        bottom: -4px;
+    }
+    &_secondary{
+        @extend .btn;
+        background: color.$btn-bg-2;
+        box-shadow: 0px 4px 0px 0px #161616;
+    }
+}
