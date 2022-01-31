@@ -18,6 +18,9 @@
     justify-content: center;
     width: max-content;
     padding: 30px 65px;
+    img{
+        margin-right: 15px;
+    }
     &:active{
         box-shadow: 0 0 0 0 #0AA307;
         bottom: -4px;

@@ -1,5 +1,11 @@
 // Шапка
 .header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    z-index: z('header');
     &__top{
         display: flex;
         align-items: center;
@@ -50,6 +56,28 @@
         font-size: 14px;
         line-height: 130%;
         color: $gray;
+        position: relative;
+        &:hover{
+            color: $black;
+            &::before{
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            border-radius: 6px;
+            left: 0;
+            background: $black;
+            @include size(100%, 1px);
+            transition: 200ms cubic-bezier(0.68,-0.55,0.265,1.55);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(5px);
+        }
         &.active{
             color: $black;
         }

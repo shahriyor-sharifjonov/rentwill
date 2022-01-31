@@ -14,10 +14,17 @@
 // vendors
 // @import 'vendors/bootstrap'
 
-// base
+// base 
 @import 
     'base/reset',
     'base/typography';
+
+// components
+@import 
+    'components/buttons',
+    'components/carousel',
+    'components/cover',
+    'components/dropdown';
 
 // layout
 @import 
@@ -26,14 +33,8 @@
     'layout/header',
     'layout/footer',
     'layout/sidebar',
-    'layout/forms';
-
-// components
-@import 
-    'components/buttons',
-    'components/carousel',
-    'components/cover',
-    'components/dropdown';
+    'layout/forms',
+    'layout/intro';
 
 // pages
 @import 
