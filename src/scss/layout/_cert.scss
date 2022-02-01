@@ -1,0 +1,26 @@
+.cert{
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content{
+        padding: 80px 0;
+        max-width: 412px;
+        width: 100%;
+    }
+    &__btn{
+        width: 100%;
+        padding: 23px 54px;
+        font-size: 18px;
+        line-height: 140%;
+    }
+    &__title{
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 130%;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: #8E8E8E;        
+    }
+}
