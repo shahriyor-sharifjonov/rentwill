@@ -1,0 +1,33 @@
+mixin contact()
+    .contact#contact 
+        .contact__body.container 
+            h2.contact__title Работаем как с <span>вашим</span> материалом, так и подбираем и закупаем материалы для ремонта <span>“под ключ”</span>
+            .contact__wrap 
+                .contact__item 
+                    img(src="@img/contact-1.png", alt="" draggable="false").contact__item-img
+                    p.contact__item-p Цены на материал от производителей (в среднем скидка до 15%)
+                .contact__item 
+                    img(src="@img/contact-2.png", alt="" draggable="false").contact__item-img
+                    p.contact__item-p Проверенное качество материалов на сотнях объектов
+                .contact__item 
+                    img(src="@img/contact-3.png", alt="" draggable="false").contact__item-img
+                    p.contact__item-p Доставка и подъём материалов в течение 3х часов
+                .contact__item 
+                    img(src="@img/contact-4.png", alt="" draggable="false").contact__item-img
+                    p.contact__item-p Выкупаем у Вас оставшийся лишний материал
+                .contact__item 
+                    img(src="@img/contact-5.png", alt="" draggable="false").contact__item-img
+                    p.contact__item-p Все материалы имеют официальную сертифицикацию
+                .contact__item 
+                    img(src="@img/contact-6.png", alt="" draggable="false").contact__item-img
+                    p.contact__item-p Доставляем материалы собственным транспортом
+            .contact__big 
+                p В нашем магазине Вы можете выбрать <span>100% оригинальные</span> строительные материалы для ремонта среди 12000 наименований <span>по сниженным</span> для Вас ценам.
+                img(src="@img/contact-big.png", alt="" draggable="false")
+            .contact__form 
+                p.contact__form-title Начать ремонт можно сейчас, <br>а оплатить в течение 24 месяцев
+                p.contact__form-p Оформите рассрочку
+                form(action="").contact__form-row
+                    input(type="text" placeholder="Ваше имя" required).input.contact__form-input
+                    input(type="tel" placeholder="+7 (---) --- -- --" required).input.contact__form-input
+                    button(type="submit").btn.contact__form-btn Оставить заявку
