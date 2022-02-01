@@ -8,19 +8,19 @@ mixin steps()
                         .steps__item-num 01
                         p.steps__item-title Оставить заявку
                         p.steps__item-p и/или посетить наш офис
-                    a(href="#!").steps__item-btn.btn Оставить заявку 
+                    button(type="button" onclick="openPopup('tel')").steps__item-btn.btn Оставить заявку 
                 .steps__item.steps__item_lg
                     .steps__item-content
                         .steps__item-num 02
                         p.steps__item-title Вызвать на замер
                         p.steps__item-p мастер приедет к Вам бесплатно
-                    a(href="#!").steps__item-btn.btn Вызать на замер 
+                    button(type="button" onclick="openPopup('zamer')").steps__item-btn.btn Вызать на замер 
                 .steps__item.steps__item_lg
                     .steps__item-content
                         .steps__item-num 03
                         p.steps__item-title Рассчитать смету
                         p.steps__item-p и подписать договор
-                    a(href="#!").steps__item-btn.btn Расчитать смету 
+                    button(type="button" onclick="openPopup('dogovor')").steps__item-btn.btn Расчитать смету 
                 .steps__item.steps__item_sm
                     .steps__item-num 04
                     p.steps__item-title Составление плана

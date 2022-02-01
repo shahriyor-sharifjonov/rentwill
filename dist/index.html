@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220202003611">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220202013143">
     <title>Document</title>
   </head>
   <body> 
@@ -260,7 +260,8 @@
                           </div>
                           <div class="cam__form"> 
                             <div class="cam__form-content"> 
-                              <p class="cam__form-title">Скачайте <span>топ-10 ошибок</span>, которые допускают заказчики при заказе ремонта </p><a class="btn cam__form-btn" href="#!">Скачать PDF</a>
+                              <p class="cam__form-title">Скачайте <span>топ-10 ошибок</span>, которые допускают заказчики при заказе ремонта </p>
+                              <button class="btn cam__form-btn" type="button" onclick="openPopup('getfile')">Скачать PDF</button>
                             </div>
                             <div class="cam__form-img"> <picture><source srcset="img/cam-form.webp" type="image/webp"><img src="img/cam-form.png" alt="" draggable="false"></picture></div>
                           </div>
@@ -283,7 +284,9 @@
                               <p class="form__item-title"><span>Через 2-5 дней</span> предоставим технический, электромонтажный и сантехнический проект!</p>
                             </div>
                           </div>
-                          <div class="form__btn"><a class="btn" href="#!">Записаться </a></div>
+                          <div class="form__btn">
+                            <button class="btn" type="button" onclick="openPopup('zamer')">Записаться </button>
+                          </div>
                         </div>
                       </div>
                       <div class="design">    
@@ -304,7 +307,10 @@
                               <p class="design__item-p">Проектируем функциональность расположения мебели</p>
                             </div>
                           </div>
-                          <div class="design__buttons"> <a class="btn design__btn" href="#!">Заказать дизайн проект </a><a class="btn_secondary design__btn" href="#!">Заказать консультацию дизайнера </a></div>
+                          <div class="design__buttons"> 
+                            <button class="btn design__btn" type="button" onclick="openPopup('contactpopup')">Заказать дизайн проект </button>
+                            <button class="btn_secondary design__btn" type="button" onclick="openPopup('konsult')">Заказать консультацию дизайнера </button>
+                          </div>
                         </div>
                       </div>
                       <div class="choose"> 
@@ -385,7 +391,8 @@
 </svg>
                               </div>
                               <p>График работы прикрепляется к договору </p>
-                            </div><a class="btn promise__btn" href="#!">Скачать договор <span class="light">(0,1 МБ, PDF)</span></a><picture><source srcset="img/promise.webp" type="image/webp"><img src="img/promise.png" alt="" draggable="false"></picture>
+                            </div>
+                            <button class="btn promise__btn" type="button" onclick="openPopup('dogovor')">Скачать договор <span class="light">(0,1 МБ, PDF)</span></button><picture><source srcset="img/promise.webp" type="image/webp"><img src="img/promise.png" alt="" draggable="false"></picture>
                           </div>
                         </div>
                       </div>
@@ -473,21 +480,24 @@
                                 <div class="steps__item-num">01</div>
                                 <p class="steps__item-title">Оставить заявку</p>
                                 <p class="steps__item-p">и/или посетить наш офис</p>
-                              </div><a class="steps__item-btn btn" href="#!">Оставить заявку </a>
+                              </div>
+                              <button class="steps__item-btn btn" type="button" onclick="openPopup('tel')">Оставить заявку </button>
                             </div>
                             <div class="steps__item steps__item_lg">
                               <div class="steps__item-content">
                                 <div class="steps__item-num">02</div>
                                 <p class="steps__item-title">Вызвать на замер</p>
                                 <p class="steps__item-p">мастер приедет к Вам бесплатно</p>
-                              </div><a class="steps__item-btn btn" href="#!">Вызать на замер </a>
+                              </div>
+                              <button class="steps__item-btn btn" type="button" onclick="openPopup('zamer')">Вызать на замер </button>
                             </div>
                             <div class="steps__item steps__item_lg">
                               <div class="steps__item-content">
                                 <div class="steps__item-num">03</div>
                                 <p class="steps__item-title">Рассчитать смету</p>
                                 <p class="steps__item-p">и подписать договор</p>
-                              </div><a class="steps__item-btn btn" href="#!">Расчитать смету </a>
+                              </div>
+                              <button class="steps__item-btn btn" type="button" onclick="openPopup('dogovor')">Расчитать смету </button>
                             </div>
                             <div class="steps__item steps__item_sm">
                               <div class="steps__item-num">04</div>
@@ -558,6 +568,103 @@
                           </div>
                         </div>
                       </div>
+                      <div class="popup" id="getfile"> 
+                        <button class="popup__close" onclick="popupClose()"> </button>
+                        <form class="popup__body" action="index.html">
+                          <p class="popup__title">Где удобнее <br>получить файл?</p>
+                          <div class="popup__soc"> 
+                            <div class="popup__soc-item">
+                              <input type="radio" name="soc" required><picture><source srcset="img/whatsapp-popup.webp" type="image/webp"><img src="img/whatsapp-popup.png" alt="" draggable="false"></picture>
+                              <p>WhatsApp</p>
+                            </div>
+                            <div class="popup__soc-item">
+                              <input type="radio" name="soc" required><picture><source srcset="img/viber-popup.webp" type="image/webp"><img src="img/viber-popup.png" alt="" draggable="false"></picture>
+                              <p>Telegram</p>
+                            </div>
+                            <div class="popup__soc-item">
+                              <input type="radio" name="soc" required><picture><source srcset="img/telegram-popup.webp" type="image/webp"><img src="img/telegram-popup.png" alt="" draggable="false"></picture>
+                              <p>Viber</p>
+                            </div>
+                          </div>
+                          <input class="input popup__input bg" type="tel" placeholder="+7 (---) --- -- --" required>
+                          <button class="btn popup__btn" type="submit">Получить PDF </button>
+                        </form>
+                      </div>
+                      <div class="popup" id="dogovor"> 
+                        <button class="popup__close" onclick="popupClose()"> </button>
+                        <form class="popup__body" action="index.html">
+                          <p class="popup__title">Где удобнее <br>получить договор?</p>
+                          <div class="popup__soc"> 
+                            <div class="popup__soc-item">
+                              <input type="radio" name="soc" required><picture><source srcset="img/whatsapp-popup.webp" type="image/webp"><img src="img/whatsapp-popup.png" alt="" draggable="false"></picture>
+                              <p>WhatsApp</p>
+                            </div>
+                            <div class="popup__soc-item">
+                              <input type="radio" name="soc" required><picture><source srcset="img/viber-popup.webp" type="image/webp"><img src="img/viber-popup.png" alt="" draggable="false"></picture>
+                              <p>Telegram</p>
+                            </div>
+                            <div class="popup__soc-item">
+                              <input type="radio" name="soc" required><picture><source srcset="img/telegram-popup.webp" type="image/webp"><img src="img/telegram-popup.png" alt="" draggable="false"></picture>
+                              <p>Viber</p>
+                            </div>
+                          </div>
+                          <input class="input popup__input bg" type="tel" placeholder="+7 (---) --- -- --" required>
+                          <button class="btn popup__btn" type="submit">Получить договор</button>
+                        </form>
+                      </div>
+                      <div class="popup" id="tel"> 
+                        <button class="popup__close" onclick="popupClose()"> </button>
+                        <form class="popup__body" action="index.html">
+                          <p class="popup__title sm">Оставьте контактные данные и мы перезвоним Вам в течение 15 минут</p>
+                          <input class="input popup__input bg" type="text" placeholder="Имя" required>
+                          <input class="input popup__input bg" type="tel" placeholder="+7 (---) --- -- --" required>
+                          <button class="btn popup__btn" type="submit">Перезвоните мне</button>
+                        </form>
+                      </div>
+                      <div class="popup" id="konsult">
+                        <button class="popup__close" onclick="popupClose()"> </button>
+                        <form class="popup__body" action="index.html">
+                          <p class="popup__title">Где удобно получить<br>консультацию?</p>
+                          <div class="popup__soc"> 
+                            <div class="popup__soc-item">
+                              <input type="radio" name="soc" required><picture><source srcset="img/whatsapp-popup.webp" type="image/webp"><img src="img/whatsapp-popup.png" alt="" draggable="false"></picture>
+                              <p>WhatsApp</p>
+                            </div>
+                            <div class="popup__soc-item">
+                              <input type="radio" name="soc" required><picture><source srcset="img/viber-popup.webp" type="image/webp"><img src="img/viber-popup.png" alt="" draggable="false"></picture>
+                              <p>Telegram</p>
+                            </div>
+                            <div class="popup__soc-item">
+                              <input type="radio" name="soc" required><picture><source srcset="img/telegram-popup.webp" type="image/webp"><img src="img/telegram-popup.png" alt="" draggable="false"></picture>
+                              <p>Viber</p>
+                            </div>
+                          </div>
+                          <input class="input popup__input bg" type="text" placeholder="Имя" required>
+                          <input class="input popup__input bg" type="tel" placeholder="+7 (---) --- -- --" required>
+                          <button class="btn popup__btn" type="submit">Получить консультацию</button>
+                        </form>
+                      </div>
+                      <div class="popup" id="zamer">
+                        <button class="popup__close" onclick="popupClose()"> </button>
+                        <form class="popup__body" action="index.html">
+                          <p class="popup__title">Когда Вам удобно<br>провести замер?</p>
+                          <div class="popup__two">
+                            <input class="input popup__input sm" type="date" placeholder="Дата" required>
+                            <input class="input popup__input sm" type="time" placeholder="Время" required>
+                          </div>
+                          <input class="input popup__input bg" type="tel" placeholder="+7 (---) --- -- --" required>
+                          <button class="btn popup__btn" type="submit">Записаться на замер</button>
+                        </form>
+                      </div>
+                      <div class="popup" id="contactpopup">
+                        <button class="popup__close" onclick="popupClose()"> </button>
+                        <form class="popup__body" action="index.html">
+                          <p class="popup__title sm">Оставьте контактные данные и мы перезвоним Вам по вопросу дизайн-проекта</p>
+                          <input class="input popup__input bg" type="text" placeholder="Имя" required>
+                          <input class="input popup__input bg" type="tel" placeholder="+7 (---) --- -- --" required>
+                          <button class="btn popup__btn" type="submit">Получить консультацию</button>
+                        </form>
+                      </div>
             </main>
             <footer class="footer" id="footer">  
               <div class="footer__body container"> 
@@ -566,6 +673,6 @@
               </div>
             </footer>
     </div>
-    <script src="js/app.min.js?_v=20220202003611"> </script>
+    <script src="js/app.min.js?_v=20220202013143"> </script>
   </body>
 </html>

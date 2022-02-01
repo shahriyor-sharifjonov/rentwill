@@ -29,6 +29,6 @@ mixin cam()
             .cam__form 
                 .cam__form-content 
                     p.cam__form-title Скачайте <span>топ-10 ошибок</span>, которые допускают заказчики при заказе ремонта 
-                    a(href="#!").btn.cam__form-btn Скачать PDF
+                    button(type='button' onclick="openPopup('getfile')").btn.cam__form-btn Скачать PDF
                 .cam__form-img 
                     img(src="@img/cam-form.png", alt="" draggable="false") 

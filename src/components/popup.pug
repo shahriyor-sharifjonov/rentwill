@@ -1,0 +1,82 @@
+mixin popup()
+    .popup#getfile 
+        button(onclick="popupClose()").popup__close 
+        form(action="index.html").popup__body
+            p.popup__title Где удобнее <br>получить файл?
+            .popup__soc 
+                .popup__soc-item
+                    input(type="radio" name="soc" required)
+                    img(src="@img/whatsapp-popup.png", alt="" draggable="false")
+                    p WhatsApp
+                .popup__soc-item
+                    input(type="radio" name="soc" required)
+                    img(src="@img/viber-popup.png", alt="" draggable="false")
+                    p Telegram
+                .popup__soc-item
+                    input(type="radio" name="soc" required)
+                    img(src="@img/telegram-popup.png", alt="" draggable="false")
+                    p Viber
+            input(type="tel" placeholder="+7 (---) --- -- --" required).input.popup__input.bg
+            button(type="submit").btn.popup__btn Получить PDF 
+    .popup#dogovor 
+        button(onclick="popupClose()").popup__close 
+        form(action="index.html").popup__body
+            p.popup__title Где удобнее <br>получить договор?
+            .popup__soc 
+                .popup__soc-item
+                    input(type="radio" name="soc" required)
+                    img(src="@img/whatsapp-popup.png", alt="" draggable="false")
+                    p WhatsApp
+                .popup__soc-item
+                    input(type="radio" name="soc" required)
+                    img(src="@img/viber-popup.png", alt="" draggable="false")
+                    p Telegram
+                .popup__soc-item
+                    input(type="radio" name="soc" required)
+                    img(src="@img/telegram-popup.png", alt="" draggable="false")
+                    p Viber
+            input(type="tel" placeholder="+7 (---) --- -- --" required).input.popup__input.bg
+            button(type="submit").btn.popup__btn Получить договор
+    .popup#tel 
+        button(onclick="popupClose()").popup__close 
+        form(action="index.html").popup__body
+            p.popup__title.sm Оставьте контактные данные и мы перезвоним Вам в течение 15 минут
+            input(type="text" placeholder="Имя" required).input.popup__input.bg
+            input(type="tel" placeholder="+7 (---) --- -- --" required).input.popup__input.bg
+            button(type="submit").btn.popup__btn Перезвоните мне
+    .popup#konsult
+        button(onclick="popupClose()").popup__close 
+        form(action="index.html").popup__body
+            p.popup__title Где удобно получить<br>консультацию?
+            .popup__soc 
+                .popup__soc-item
+                    input(type="radio" name="soc" required)
+                    img(src="@img/whatsapp-popup.png", alt="" draggable="false")
+                    p WhatsApp
+                .popup__soc-item
+                    input(type="radio" name="soc" required)
+                    img(src="@img/viber-popup.png", alt="" draggable="false")
+                    p Telegram
+                .popup__soc-item
+                    input(type="radio" name="soc" required)
+                    img(src="@img/telegram-popup.png", alt="" draggable="false")
+                    p Viber
+            input(type="text" placeholder="Имя" required).input.popup__input.bg
+            input(type="tel" placeholder="+7 (---) --- -- --" required).input.popup__input.bg
+            button(type="submit").btn.popup__btn Получить консультацию
+    .popup#zamer
+        button(onclick="popupClose()").popup__close 
+        form(action="index.html").popup__body
+            p.popup__title Когда Вам удобно<br>провести замер?
+            .popup__two
+                input(type="date" placeholder="Дата" required).input.popup__input.sm
+                input(type="time" placeholder="Время" required).input.popup__input.sm
+            input(type="tel" placeholder="+7 (---) --- -- --" required).input.popup__input.bg
+            button(type="submit").btn.popup__btn Записаться на замер
+    .popup#contactpopup
+        button(onclick="popupClose()").popup__close 
+        form(action="index.html").popup__body
+            p.popup__title.sm Оставьте контактные данные и мы перезвоним Вам по вопросу дизайн-проекта
+            input(type="text" placeholder="Имя" required).input.popup__input.bg
+            input(type="tel" placeholder="+7 (---) --- -- --" required).input.popup__input.bg
+            button(type="submit").btn.popup__btn Получить консультацию

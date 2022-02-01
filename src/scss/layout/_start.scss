@@ -6,9 +6,9 @@
         padding-bottom: 0px;
     }
     &__body{
-        position: relative;
         @include media(992){
             padding-bottom: 111px;
+            position: relative;
         }
     }
     &__title{

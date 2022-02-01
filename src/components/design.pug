@@ -15,5 +15,5 @@ mixin design()
                     .design__item-num 03
                     p.design__item-p Проектируем функциональность расположения мебели
             .design__buttons 
-                a(href="#!").btn.design__btn Заказать дизайн проект 
-                a(href="#!").btn_secondary.design__btn Заказать консультацию дизайнера 
+                button(type="button" onclick="openPopup('contactpopup')").btn.design__btn Заказать дизайн проект 
+                button(type="button" onclick="openPopup('konsult')").btn_secondary.design__btn Заказать консультацию дизайнера 
