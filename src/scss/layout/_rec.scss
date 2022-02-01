@@ -1,0 +1,33 @@
+.rec{
+    padding: 200px 0 75px 0;
+    background: url('../img/rec.png') bottom center / contain no-repeat;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__col{
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 25px;
+        &:nth-of-type(odd){
+            justify-content: flex-start;
+        }
+        &:nth-of-type(even){
+            justify-content: flex-end;
+        }
+    }
+    &__item{
+        max-width: 270px;
+        width: 100%;
+        background: #1D1D1D;
+        border-radius: 5px;
+        padding: 35px 25px;
+        &-p{
+            font-size: 16px;
+            line-height: 140%;
+            color: #FFFFFF;
+        }
+    }
+}

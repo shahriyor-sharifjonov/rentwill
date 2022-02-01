@@ -1,4 +1,85 @@
 .promise{
     padding: 270px 0 0 0;
     background: url('../img/form.png') center / cover no-repeat;
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 485px;
+    }
+    &__title{
+        font-size: 34px;
+        line-height: 130%;
+        color: #FFFFFF;      
+        margin-bottom: 15px;  
+    }
+    &__item{
+        background: #1D1D1D;
+        border-radius: 5px;
+        padding: 15px 30px;
+        &:not(:last-child){
+            margin-bottom: 15px;
+        }
+        &-img{
+            margin-bottom: 13px;
+        }
+        &-title{
+            font-size: 18px;
+            line-height: 140%;
+            color: #FFFFFF;    
+            margin-bottom: 7px;        
+        }
+        &-p{
+            font-size: 15px;
+            line-height: 140%;
+            color: #FFFFFF;            
+        }
+        &-desc{
+            font-size: 15px;
+            line-height: 140%;
+            color: #3AD037;
+            margin-top: 4px;
+        }
+    }
+    &__right{
+        line-height: 0;
+        position: relative;
+        img{
+            line-height: 0;
+        }
+    }
+    &__info{
+        background: #FFFFFF;
+        border-radius: 5px;
+        line-height: 1;
+        position: absolute;
+        left: 0;
+        top: 64px;
+        max-width: 241px;
+        width: 100%;
+        padding: 30px 30px 30px 40px;
+        &-i{
+            width: 60px;
+            height: 60px;
+            background: $gradient;
+            border-radius: 50%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -30px;
+        }
+        p{
+            font-size: 18px;
+            line-height: 140%;
+            color: #232323;
+        }
+    }
 }
