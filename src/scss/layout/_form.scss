@@ -14,6 +14,7 @@
         justify-content: center;
         align-items: stretch;
         column-gap: 70px;
+        margin-bottom: 34px;
     }
     &__item{
         &:nth-of-type(1){
@@ -70,5 +71,11 @@
                 color: $primary;
             }
         }
+    }
+    &__btn{
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 30px;
+        width: max-content;
     }
 }

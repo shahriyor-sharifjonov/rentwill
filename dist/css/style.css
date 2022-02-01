@@ -919,6 +919,7 @@
   -webkit-column-gap: 70px;
      -moz-column-gap: 70px;
           column-gap: 70px;
+  margin-bottom: 34px;
 }
 
 .form__item {
@@ -1007,6 +1008,15 @@
 
 .form__item-title span {
   color: #3AD037;
+}
+
+.form__btn {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 30px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .cases {
