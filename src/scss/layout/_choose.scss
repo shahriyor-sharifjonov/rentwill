@@ -1,5 +1,8 @@
 .choose{
     padding: 100px 0 50px 0;
+    @include media(576){
+        padding: 50px 0 50px 0;
+    }
     &__title{
         font-weight: bold;
         font-size: 34px;
@@ -7,11 +10,20 @@
         text-align: center;
         color: #232323;
         margin-bottom: 20px;
+        @include media(576){
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 130%;
+        }
     }
     &__row{
         display: flex;
         justify-content: space-between;
         margin-bottom: 50px;
+        @include media(1200){
+            flex-wrap: wrap;
+            gap: 20px;
+        }
     }
     &__item{
         width: calc(25% - 20px);
@@ -21,6 +33,12 @@
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        @include media(1200){
+            width: calc(50% - 10px);
+        }
+        @include media(768){
+            width: 100%;
+        }
         &-img{
             width: 100%;
         }
@@ -49,6 +67,12 @@
         &-btn{
             padding: 30px 78px;
             width: 100%;
+            @include media(576){
+                font-weight: bold;
+                padding: 20px;
+                font-size: 12px;
+                line-height: 11px;
+            }
         }
     }
     &__form{
@@ -61,6 +85,13 @@
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
+        @include media(1200){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @include media(992){
+            padding: 23px 20px 0 20px;
+        }
         &-content{
             padding-bottom: 60px;
         }
@@ -82,23 +113,40 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
+            @include media(768){
+                flex-direction: column;
+                gap: 15px;
+            }
         }
         &-img{
             line-height: 0;
+            max-width: 100%;
         }
         &-right{
             display: flex;
             align-items: flex-start;
             justify-content: flex-end;
             line-height: 0;
+            @include media(1200){
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
         &-input{
             margin-right: 20px;
+            @include media(768){
+                width: 100%;
+                margin-right: 0;
+            }
         }
         &-btn{
             font-size: 18px;
             line-height: 17px;
             padding: 30px 40px;
+            @include media(768){
+                width: 100%;
+                padding: 20px 40px;
+            }
         }
         &-soc{
             display: flex;

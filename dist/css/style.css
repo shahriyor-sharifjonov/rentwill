@@ -1347,6 +1347,7 @@
 
 .choose__form-img {
   line-height: 0;
+  max-width: 100%;
 }
 
 .choose__form-right {
@@ -2207,6 +2208,35 @@ a {
   .start__item p {
     font-size: 16px;
   }
+
+  .design__img {
+    display: none;
+  }
+
+  .choose__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .choose__item {
+    width: calc(50% - 10px);
+  }
+
+  .choose__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .choose__form-right {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 992px) {
@@ -2445,6 +2475,26 @@ a {
             column-gap: 20px;
   }
 
+  .design__p {
+    margin-bottom: 19px;
+  }
+
+  .design__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .design__item {
+    width: 100%;
+  }
+
+  .choose__form {
+    padding: 23px 20px 0 20px;
+  }
+
   .steps__wrap {
     -webkit-column-gap: 50px;
        -moz-column-gap: 50px;
@@ -2527,6 +2577,40 @@ a {
     font-size: 14px;
     line-height: 13px;
     max-width: 280px;
+  }
+
+  .design__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .design__btn {
+    width: 100%;
+  }
+
+  .choose__item {
+    width: 100%;
+  }
+
+  .choose__form-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+  }
+
+  .choose__form-input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .choose__form-btn {
+    width: 100%;
+    padding: 20px 40px;
   }
 
   .cases__row {
@@ -2621,6 +2705,43 @@ a {
 
   .form {
     padding: 215px 0 50px 0;
+  }
+
+  .design__body {
+    padding: 50px 15px;
+  }
+
+  .design__title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 130%;
+  }
+
+  .design__p {
+    font-size: 13px;
+    line-height: 140%;
+  }
+
+  .design__item-p {
+    font-size: 15px;
+    line-height: 140%;
+  }
+
+  .choose {
+    padding: 50px 0 50px 0;
+  }
+
+  .choose__title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 130%;
+  }
+
+  .choose__item-btn {
+    font-weight: bold;
+    padding: 20px;
+    font-size: 12px;
+    line-height: 11px;
   }
 
   .steps {
