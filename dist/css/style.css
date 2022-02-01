@@ -850,6 +850,46 @@
   color: #232323;
 }
 
+.cam__form {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  margin-bottom: -110px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 120px 0 80px;
+}
+
+.cam__form-content {
+  max-width: 493px;
+  padding: 40px 0;
+}
+
+.cam__form-img {
+  line-height: 0;
+}
+
+.cam__form-title {
+  font-size: 22px;
+  line-height: 140%;
+  color: #232323;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.cam__form-title span {
+  color: #3AD037;
+}
+
 .cases {
   background: #F9F9F9;
   padding: 100px 0;
