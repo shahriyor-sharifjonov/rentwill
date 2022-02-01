@@ -2439,6 +2439,12 @@ a {
     max-width: 100%;
   }
 
+  .form__row {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+
   .steps__wrap {
     -webkit-column-gap: 50px;
        -moz-column-gap: 50px;
@@ -2495,6 +2501,32 @@ a {
 
   .intro__title {
     font-size: 30px;
+  }
+
+  .form__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 50px;
+  }
+
+  .form__item {
+    width: 100% !important;
+    max-width: 300px !important;
+  }
+
+  .form__btn {
+    padding-right: 0;
+    max-width: 280px;
+    width: 100%;
+  }
+
+  .form__btn .btn {
+    width: 100%;
+    padding: 18px 30px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 13px;
+    max-width: 280px;
   }
 
   .cases__row {
@@ -2585,6 +2617,10 @@ a {
   .cam__form-title {
     font-size: 16px;
     line-height: 140%;
+  }
+
+  .form {
+    padding: 215px 0 50px 0;
   }
 
   .steps {
