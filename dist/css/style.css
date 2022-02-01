@@ -1368,6 +1368,13 @@
   margin-left: 25px;
 }
 
+.no-webp .promise {
+  background: url("../img/form.png") center/cover no-repeat; }
+
+.promise {
+  padding: 270px 0 0 0;
+}
+
 .cases {
   background: #F9F9F9;
   padding: 100px 0;
@@ -1574,6 +1581,10 @@
   -webkit-tap-highlight-color: transparent;
   font-family: "gothampro", sans-serif;
   scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 *:focus,
@@ -1665,3 +1676,5 @@ a {
 .webp .form__item:nth-of-type(2) { background: url(../img/form-2.webp), #1D1D1D; }
 
 .webp .form__item:nth-of-type(3) { background: url(../img/form-3.webp), #1D1D1D; }
+
+.webp .promise { background: url(../img/form.webp) center/cover no-repeat; }
