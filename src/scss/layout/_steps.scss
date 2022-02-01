@@ -9,4 +9,94 @@
         text-align: center;
         color: #FFFFFF;
     }
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 815px;
+        margin: 0 auto;
+        row-gap: 90px;
+    }
+    &__item{
+        width: 230px;
+        border-radius: 5px;
+        position: relative;
+        padding: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:first-of-type{
+            background: url('../img/steps-1.png'), #1D1D1D;
+            background-position: 50% 50%;
+        }
+        &:nth-of-type(2){
+            background: url('../img/steps-2.png'), #1D1D1D;
+            background-position: 50% 50%;
+        }
+        &:nth-of-type(3){
+            background: url('../img/steps-3.png'), #1D1D1D;
+            background-position: 50% 50%;
+        }
+        &:nth-of-type(4){
+            background: url('../img/steps-4.png'), #1D1D1D;
+            background-position: 50% 50%;
+        }
+        &:nth-of-type(5){
+            background: url('../img/steps-5.png'), #1D1D1D;
+            background-position: 50% 50%;
+        }
+        &:nth-of-type(6){
+            background: url('../img/steps-6.png'), #1D1D1D;
+            background-position: 50% 50%;
+        }
+        &-content{
+            flex: 1 1 auto;
+        }
+        &-num{
+            margin-top: -53px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: $gradient;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            line-height: 140%;
+            text-align: center;
+            color: #FFFFFF;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+        &-title{
+            font-size: 18px;
+            line-height: 140%;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 5px;
+        }
+        &-p{
+            font-size: 15px;
+            line-height: 140%;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        &-btn{
+            max-width: 100%;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 13px;
+            text-align: center;
+            color: #FFFFFF;      
+            width: calc(100% - 11px);
+            padding: 22px;      
+        }
+        &_lg{
+            min-height: 275px;
+        }
+        &_sm{
+            min-height: 217px;
+        }
+    }
 }
