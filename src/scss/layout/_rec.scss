@@ -1,16 +1,67 @@
 .rec{
     padding: 200px 0 75px 0;
     background: url('../img/rec.png') bottom center / contain no-repeat;
+    @include media(1400){
+        padding: 100px 0 75px 0;
+    }
+    @include media(992){
+        background: #fff !important;
+    }
+    @include media(576){
+        padding: 50px 0 50px 0;
+    }
+    &__title{
+        display: none;
+        @include media(992){
+            font-weight: bold;
+            font-size: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 130%;
+            text-align: center;
+            color: #232323;
+            display: block;
+            margin-bottom: 9px;
+            span{
+                color: #3AD037;
+            }
+        }
+        @include media(576){
+            font-size: 22px;
+            line-height: 130%;
+        }
+    }
+    &__p{
+        display: none;
+        @include media(992){
+            display: block;
+            max-width: 400px;
+            text-align: center;
+            color: #232323;
+            font-size: 22px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+        @include media(576){
+            font-size: 14px;
+            line-height: 140%;
+        }
+    }
     &__content{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        gap: 20px;
     }
     &__col{
-        width: 50%;
+        width: calc(50% - 10px);
         display: flex;
         justify-content: flex-start;
-        padding-bottom: 25px;
+        @include media(576){
+            width: 100%;
+        }
         &:nth-of-type(odd){
             justify-content: flex-start;
         }
@@ -24,6 +75,9 @@
         background: #1D1D1D;
         border-radius: 5px;
         padding: 35px 25px;
+        @include media(576){
+            max-width: 100%;
+        }
         &-p{
             font-size: 16px;
             line-height: 140%;

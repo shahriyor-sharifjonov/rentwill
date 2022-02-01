@@ -1,22 +1,42 @@
 .promise{
     padding: 270px 0 0 0;
     background: url('../img/form.png') center / cover no-repeat;
+    @include media(576){
+        padding: 200px 0 0 0;
+    }
     &__body{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        @include media(1200){
+            flex-direction: column;
+        }
     }
     &__content{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         max-width: 485px;
+        @include media(1200){
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     &__title{
         font-size: 34px;
         line-height: 130%;
         color: #FFFFFF;      
         margin-bottom: 15px;  
+        @include media(1200){
+            text-align: center;
+        }
+        @include media(576){
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 130%;
+            color: #FFFFFF;
+            text-align: left;
+        }
     }
     &__item{
         background: #1D1D1D;
@@ -49,8 +69,42 @@
     &__right{
         line-height: 0;
         position: relative;
+        @include media(1200){
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 36px;
+        }
         img{
             line-height: 0;
+            max-width: 100%;
+            @include media(1200){
+                margin-left: 20px;
+                margin-right: 20px;
+                max-width: calc(100% - 40px);
+            }
+        }
+    }
+    &__btn{
+        display: none;
+        @include media(1200){
+            display: flex;
+            position: absolute;
+            left: 15px;
+            right: 15px;
+            width: calc(100% - 30px);
+            bottom: 50px;
+            .light{
+                font-weight: 300;
+            }
+            &:active{
+                bottom: 45px;
+            }
+        }
+        @include media(576){
+            padding: 20px 20px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 13px; 
         }
     }
     &__info{
@@ -63,6 +117,10 @@
         max-width: 241px;
         width: 100%;
         padding: 30px 30px 30px 40px;
+        @include media(592){
+            left: 15px;
+            padding: 20px 6px 20px 40px;
+        }
         &-i{
             width: 60px;
             height: 60px;
@@ -75,11 +133,20 @@
             top: 50%;
             transform: translateY(-50%);
             left: -30px;
+            @include media(592){
+                width: 38px;
+                height: 38px;
+                left: -19px;
+            }
         }
         p{
             font-size: 18px;
             line-height: 140%;
             color: #232323;
+            @include media(576){
+                font-size: 16px;
+                line-height: 140%;
+            }
         }
     }
 }
