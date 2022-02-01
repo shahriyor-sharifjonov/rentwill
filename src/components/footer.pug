@@ -1,3 +1,13 @@
 mixin footer()
     footer.footer   
-        p footer
+        .footer__body.container 
+            .footer__left
+                a(href="#!").footer__logo  
+                    img(src="@img/logo-2.png", alt="" draggable="false")
+                a(href="#!").footer__link Правила конфиденциальности 
+            .footer__right  
+                a(href="#!" target="_blank").footer__social
+                    img(src="@img/whatsapp.png", alt="" draggable="false")
+                a(href="#!" target="_blank").footer__social
+                    img(src="@img/telegram.png", alt="" draggable="false")
+                a(href="tel:+89299016646").footer__tel 8 (929) 901-66-46

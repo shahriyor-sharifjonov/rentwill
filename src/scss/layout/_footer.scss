@@ -1,1 +1,39 @@
 // Футер
+.footer{
+    background: $black;
+    padding: 50px 0;
+    &__body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &__logo{
+        margin-right: 28px;
+    }
+    &__link{
+        font-size: 16px;
+        line-height: 130%;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__social{
+        margin-left: 23px;
+    }
+    &__tel{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 130%;
+        color: #FFFFFF;
+        margin-left: 36px;
+    }
+}
