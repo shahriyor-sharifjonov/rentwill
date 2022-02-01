@@ -1,12 +1,23 @@
 .cam{
     padding: 30px;
+    @include media(576){
+        padding: 30px 0;
+    }
     &__intro{
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: -50px;
+        @include media(992){
+            margin-bottom: 20px;
+        }
         &-content{
             max-width: 510px;   
+        }
+        &-img{
+            @include media(992){
+                display: none;
+            }
         }
     }
     &__title{
@@ -15,20 +26,38 @@
         line-height: 140%;
         color: #232323;        
         margin-bottom: 10px;
+        @include media(576){
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 130%;
+        }
     }
     &__p{
         font-size: 20px;
         line-height: 140%;
         color: #232323;
+        @include media(576){
+            font-size: 13px;
+            line-height: 140%;
+        }
     }
     &__row{
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         margin-bottom: 50px;
+        @include media(992){
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
     }
     &__item{
         width: calc(33.333% - 15px);
+        @include media(992){
+            width: 100%;
+            max-width: 300px;
+        }
         &-img{
             width: 100%;
             display: flex;
@@ -64,12 +93,37 @@
         align-items: flex-end;
         justify-content: space-between;
         padding: 0 120px 0 80px;
+        @include media(992){
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 20px 0 20px;
+        }
         &-content{
             max-width: 493px;
             padding: 40px 0;
+            @include media(992){
+                padding: 20px 0;
+            }
         }
         &-img{
             line-height: 0;
+            @include media(992){
+                margin-top: -60px;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+        &-btn{
+            max-width: 100%;
+            @include media(576){
+                font-size: 14px;
+                line-height: 13px;
+                padding: 18px 40px;
+            }
         }
         &-title{
             font-size: 22px;
@@ -77,6 +131,10 @@
             color: #232323;          
             font-weight: 500; 
             margin-bottom: 20px;
+            @include media(576){
+                font-size: 16px;
+                line-height: 140%;
+            }
             span{
                 color: #3AD037;
             } 

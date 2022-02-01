@@ -5,6 +5,10 @@
         align-items: center;
         justify-content: center;
         column-gap: 50px;
+        @include media(992){
+            gap: 20px;
+            flex-wrap: wrap;
+        }
     }
     &__item{
         height: 182px;
@@ -17,17 +21,42 @@
         align-items: flex-end;
         padding: 23px;
         justify-content: center;
+        &.lg{
+            display: none;
+            @include media(992){
+                display: flex;
+            }
+        }
+        @include media(992){
+            width: calc(50% - 10px);
+        }
+        @include media(480){
+            padding: 10px;
+            height: 98px;
+        }
         &:first-of-type{
-            background: url('../img/advantages-1.png') 0 0 / cover no-repeat;
+            background: url('../img/advantages-1.png') 50% 0 / contain no-repeat;
         }
         &:nth-of-type(2){
-            background: url('../img/advantages-2.png') 0 0 / cover no-repeat;
+            background: url('../img/advantages-2.png') 50% 0 / contain no-repeat;
         }
         &:nth-of-type(3){
-            background: url('../img/advantages-3.png') 0 0 / cover no-repeat;
+            background: url('../img/advantages-3.png') 50% 0 / contain no-repeat;
+        }
+        &:nth-of-type(4){
+            background: url('../img/advantages-4.png') 50% 0 / contain no-repeat;
         }
         p{
             text-align: center;
+            @include media(480){
+                font-size: 12px;
+                line-height: 130%;
+                text-align: center; 
+                color: #232323;
+            }
+            @include media(400){
+                font-size: 10px;
+            }
         }
     }
 }

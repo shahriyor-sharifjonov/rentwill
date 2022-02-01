@@ -3,6 +3,9 @@
     min-height: 822px;
     position: relative;
     color: $black;
+    @include media(1250){
+        min-height: max-content;
+    }
     &::after{
         content: '';
         position: absolute;
@@ -21,12 +24,29 @@
         justify-content: space-between;
         padding-top: 165px;
         min-height: 822px;
+        @include media(1250){
+            padding-bottom: 80px;
+            min-height: max-content;
+        }
+        @include media(992){
+        }
+        @include media(768){
+            padding-top: 120px;
+        }
     }
     &__img{
         margin-right: -173px; 
+        @include media(1470){
+            margin-right: 0;
+            margin-left: -100px;
+        }
+        @include media(1230){
+            display: none;
+        }
     }
     &__content{
         z-index: 2;
+        max-width: 768px;
     }
     &__info{
         box-shadow: 0px 4px 4px 0px #0000001A;
@@ -39,6 +59,9 @@
         padding: 20px 30px;
         margin-bottom: 40px;
         background: #fff;
+        @include media(768){
+            display: none;
+        }
         &-img{
             margin-right: 15px;
         }
@@ -54,11 +77,26 @@
         line-height: 130%;
         margin-bottom: 7px;
         text-transform: uppercase;
+        @include media(768){
+            font-size: 30px;
+        }
+        @include media(576){
+            font-size: 20px;
+            line-height: 130%;
+            margin-bottom: 11px;
+            max-width: 441px;
+        }
     }
     &__desc{
         font-size: 28px;
         line-height: 130%;
         margin-bottom: 23px;
+        @include media(576){
+            font-size: 18px;
+            line-height: 130%;
+            max-width: 320px;
+            margin-bottom: 21px;
+        }
         span{
             color: $primary;
             font-weight: 500;
@@ -75,9 +113,26 @@
         &-p{
             font-size: 20px;
             line-height: 130%;
+            @include media(576){
+                max-width: 124px;
+                font-size: 12px;
+                line-height: 130%;
+            }
         }
     }
     &__btn{
         padding: 20px 42px;
+        @include media(576){
+            padding: 18px 25px;
+            font-size: 14px;
+            line-height: 13px;
+            img{
+                display: none;
+            }
+        }
+        @include media(380){
+            max-width: 100%;
+            width: 100%;
+        }
     }
 }
