@@ -1,0 +1,12 @@
+.steps{
+    background: url('../img/form.png') center / cover no-repeat;
+    padding: 300px 0 100px 0;
+    &__title{
+        margin-bottom: 55px;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 130%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
