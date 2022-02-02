@@ -144,8 +144,10 @@
     }
     &-2{
         margin-bottom: 100px;
+        padding-top: 100px;
         @include media(576){
             margin-bottom: 50px;
+            padding-top: 50px;
         }
         &__title{
             font-weight: bold;
