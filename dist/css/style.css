@@ -3527,6 +3527,11 @@ a {
     width: 100%;
   }
 
+  .thanks {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
   .thanks__title {
     font-size: 30px;
     margin-bottom: 16px;
