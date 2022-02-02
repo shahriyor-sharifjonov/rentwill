@@ -1,0 +1,31 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Document
+    body 
+        .wrapper 
+            include components/header 
+            +header 
+            main.main.thanks 
+                .thanks__body.container 
+                    .thanks__left
+                        h2.thanks__title Тест успешно пройден!
+                        p.thanks__p Куда прислать/сообщить результат расчёта и выслать выбранный подарок?
+                        .thanks__items 
+                            .thanks__items-left
+                                .thanks__item 
+                                .thanks__item 
+                                .thanks__item 
+                                .thanks__item 
+                            .thanks__items-right 
+                                input(type="text" name="name" placeholder="Имя").input.thanks__item-input 
+                                input(type="text" name="name" placeholder="+7 (---) --- -- --").input.thanks__item-input 
+                    .thanks__right
+                        img(src="@img/thanks.png", alt="" draggable="false")                    
+            include components/footer 
+            +footer
+        script(src="js/app.min.js") 

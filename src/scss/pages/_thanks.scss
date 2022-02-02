@@ -1,0 +1,14 @@
+.thanks{
+    display: flex;
+    justify-content: flex-end;
+    &__body{
+        display: flex;
+        align-items: flex-end;
+    }
+    &__left{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

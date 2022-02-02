@@ -15,3 +15,90 @@ window.popupClose = function(){
     });
     document.body.style.overflowY = "visible";
 }
+
+let activeQuiz = 1
+const quizTitle = document.querySelector('.quiz__title');
+const progress = document.querySelector('.quiz__progress-track');
+const prev = document.querySelector('.quiz__prev');
+const next = document.querySelector('.quiz__next');
+const item = document.querySelectorAll('.quiz__item');
+const check = document.querySelectorAll('.quiz__check');
+window.reloadQuiz = function(){
+    if(activeQuiz == 1){
+        quizTitle.innerHTML = '1. Где планируете ремонт?'
+        prev.classList.add('hidden');
+        progress.style.width = '14.2857142857%';
+        item.forEach(el => {
+            el.classList.remove('active');
+        });
+        document.querySelector('.quiz__1').classList.add('active');
+    }else if(activeQuiz == 2){
+        quizTitle.innerHTML = 'Какой тип ремонта Вас интересует?'
+        prev.classList.remove('hidden');
+        progress.style.width = '28.5714285714%';
+        item.forEach(el => {
+            el.classList.remove('active');
+        });
+        document.querySelector('.quiz__2').classList.add('active');
+    }else if(activeQuiz == 3){
+        quizTitle.innerHTML = 'Какая площадь требуется к ремонту?'
+        prev.classList.remove('hidden');
+        progress.style.width = '42.8571428571%';
+        item.forEach(el => {
+            el.classList.remove('active');
+        });
+        document.querySelector('.quiz__3').classList.add('active');
+    }else if(activeQuiz == 4){
+        quizTitle.innerHTML = 'Есть ли у Вас дизайн проект?'
+        prev.classList.remove('hidden');
+        progress.style.width = '57.1428571428%';
+        item.forEach(el => {
+            el.classList.remove('active');
+        });
+        document.querySelector('.quiz__4').classList.add('active');
+    }else if(activeQuiz == 5){
+        quizTitle.innerHTML = 'Требуется ли Вам помощь с подбором материала?'
+        prev.classList.remove('hidden');
+        progress.style.width = '71.4285714285%';
+        item.forEach(el => {
+            el.classList.remove('active');
+        });
+        document.querySelector('.quiz__5').classList.add('active');
+    }else if(activeQuiz == 6){
+        quizTitle.innerHTML = 'Когда планируете начать ремонт?'
+        prev.classList.remove('hidden');
+        progress.style.width = '85.7142857142%';
+        item.forEach(el => {
+            el.classList.remove('active');
+        });
+        document.querySelector('.quiz__6').classList.add('active');
+    }else if(activeQuiz == 7){
+        quizTitle.innerHTML = 'Выберите Ваш подарок'
+        prev.classList.remove('hidden');
+        progress.style.width = '100%';
+        item.forEach(el => {
+            el.classList.remove('active');
+        });
+        document.querySelector('.quiz__7').classList.add('active');
+        next.type = "submit"
+    }
+}
+reloadQuiz()
+next.addEventListener('click', function(){
+    if(next.classList.contains('can')){
+        activeQuiz ++;
+        reloadQuiz()
+        next.classList.remove('can');
+    }
+})
+prev.addEventListener('click', function(){
+    activeQuiz --;
+    reloadQuiz()
+    next.classList.add('can');
+})
+
+check.forEach(element => {
+    element.addEventListener('click', function(){
+        next.classList.add('can'); 
+    })
+});
