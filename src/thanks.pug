@@ -17,13 +17,32 @@ html(lang="ru")
                         p.thanks__p Куда прислать/сообщить результат расчёта и выслать выбранный подарок?
                         .thanks__items 
                             .thanks__items-left
-                                .thanks__item 
-                                .thanks__item 
-                                .thanks__item 
-                                .thanks__item 
+                                .thanks__item   
+                                    input(type="radio" name="soc" required)
+                                    .border 
+                                    img(src="@img/whatsapp.png", alt="" draggable="false")
+                                    p WhatsApp
+                                .thanks__item   
+                                    input(type="radio" name="soc" required)
+                                    .border 
+                                    img(src="@img/tel-3.png", alt="" draggable="false")
+                                    p По SMS
+                                .thanks__item   
+                                    input(type="radio" name="soc" required)
+                                    .border 
+                                    img(src="@img/viber-2.png", alt="" draggable="false")
+                                    p Viber
+                                .thanks__item   
+                                    input(type="radio" name="soc" required)
+                                    .border 
+                                    img(src="@img/telegram.png", alt="" draggable="false")
+                                    p Telegram
                             .thanks__items-right 
                                 input(type="text" name="name" placeholder="Имя").input.thanks__item-input 
                                 input(type="text" name="name" placeholder="+7 (---) --- -- --").input.thanks__item-input 
+                        button(type='button').btn.thanks__btn 
+                            img(src="@img/calc.png", alt="") 
+                            | Получить смету и подарок 
                     .thanks__right
                         img(src="@img/thanks.png", alt="" draggable="false")                    
             include components/footer 

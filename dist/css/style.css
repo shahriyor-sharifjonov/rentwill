@@ -2416,6 +2416,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-top: 160px;
 }
 
 .thanks__body {
@@ -2425,6 +2426,9 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .thanks__left {
@@ -2439,6 +2443,121 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.thanks__right {
+  line-height: 0;
+  width: 310px;
+}
+
+.thanks__right img {
+  width: 100%;
+}
+
+.thanks__title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+  color: #232323;
+  margin-bottom: 23px;
+}
+
+.thanks__p {
+  font-size: 22px;
+  line-height: 130%;
+  color: #000000;
+  max-width: 486px;
+  margin-bottom: 35px;
+}
+
+.thanks__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.thanks__items-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 403px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 25px;
+  margin-right: 35px;
+}
+
+.thanks__items-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 25px;
+}
+
+.thanks__btn {
+  padding: 20px 35px;
+  margin-top: 40px;
+}
+
+.thanks__item {
+  width: 189px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  padding: 13px 20px;
+}
+
+.thanks__item img {
+  margin-right: 15px;
+}
+
+.thanks__item-input {
+  height: 63px;
+}
+
+.thanks__item input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+}
+
+.thanks__item input:checked ~ .border {
+  border: 2px solid #3AD037;
+}
+
+.thanks__item .border {
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: 200ms ease-out;
+  -o-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 2px solid #E9E9E9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
 }
 
 * {
@@ -2639,6 +2758,14 @@ a {
 
   .promise__btn:active {
     bottom: 45px;
+  }
+
+  .thanks {
+    padding-bottom: 100px;
+  }
+
+  .thanks__right {
+    display: none;
   }
 }
 
@@ -3013,6 +3140,23 @@ a {
   .footer__tel_lg {
     display: block;
   }
+
+  .thanks__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 25px;
+  }
+
+  .thanks__items-left {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .thanks__item {
+    width: calc(50% - 13px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -3360,12 +3504,51 @@ a {
     margin-bottom: 50px;
   }
 
+  .quiz__title {
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  .quiz__item-el.w-20 {
+    width: calc(50% - 10px);
+  }
+
+  .quiz__btn {
+    font-size: 12px;
+    line-height: 11px;
+    padding: 19px 40px;
+  }
+
   .footer__logo {
     width: 86px;
   }
 
   .footer__logo img {
     width: 100%;
+  }
+
+  .thanks__title {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+
+  .thanks__p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .thanks__btn {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 20px;
+    height: 63px;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .thanks__btn img {
+    margin-right: 5px;
+    display: none;
   }
 }
 
@@ -3380,6 +3563,33 @@ a {
     line-height: 130%;
     text-align: center;
     color: #232323;
+  }
+}
+
+@media (max-width: 430px) {
+  .thanks__items {
+    row-gap: 10px;
+  }
+
+  .thanks__items-left {
+    gap: 10px;
+  }
+
+  .thanks__items-right {
+    gap: 10px;
+  }
+
+  .thanks__item {
+    padding: 10px;
+    width: calc(50% - 5px);
+  }
+
+  .thanks__item img {
+    margin-right: 6px;
+  }
+
+  .thanks__item p {
+    font-size: 14px;
   }
 }
 

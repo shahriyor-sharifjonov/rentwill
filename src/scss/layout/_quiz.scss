@@ -10,6 +10,10 @@
         color: #232323;      
         text-align: center;  
         margin-bottom: 25px;
+        @include media(576){
+            font-size: 18px;
+            line-height: 130%;
+        }
     }
     &__progress{
         width: 100%;
@@ -46,6 +50,9 @@
                 width: calc(20% - 32px);
                 @include media(992){
                     width: calc(33.333% - 14px);
+                }
+                @include media(576){
+                    width: calc(50% - 10px);
                 }
             }
             &-i{
@@ -107,6 +114,13 @@
         display: flex;
         justify-content: space-between;
         margin-top: 35px;
+    }
+    &__btn{
+        @include media(576){
+            font-size: 12px;
+            line-height: 11px;
+            padding: 19px 40px;
+        }
     }
     &__next{
         opacity: 0.5;

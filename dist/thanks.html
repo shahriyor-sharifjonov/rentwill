@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220202140230">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220202143217">
     <title>Document</title>
   </head>
   <body> 
@@ -39,16 +39,33 @@
             <p class="thanks__p">Куда прислать/сообщить результат расчёта и выслать выбранный подарок?</p>
             <div class="thanks__items"> 
               <div class="thanks__items-left">
-                <div class="thanks__item"> </div>
-                <div class="thanks__item"> </div>
-                <div class="thanks__item"> </div>
-                <div class="thanks__item"> </div>
+                <div class="thanks__item">  
+                  <input type="radio" name="soc" required>
+                  <div class="border"> </div><picture><source srcset="img/whatsapp.webp" type="image/webp"><img src="img/whatsapp.png" alt="" draggable="false"></picture>
+                  <p>WhatsApp</p>
+                </div>
+                <div class="thanks__item">  
+                  <input type="radio" name="soc" required>
+                  <div class="border"> </div><picture><source srcset="img/tel-3.webp" type="image/webp"><img src="img/tel-3.png" alt="" draggable="false"></picture>
+                  <p>По SMS</p>
+                </div>
+                <div class="thanks__item">  
+                  <input type="radio" name="soc" required>
+                  <div class="border"> </div><picture><source srcset="img/viber-2.webp" type="image/webp"><img src="img/viber-2.png" alt="" draggable="false"></picture>
+                  <p>Viber</p>
+                </div>
+                <div class="thanks__item">  
+                  <input type="radio" name="soc" required>
+                  <div class="border"> </div><picture><source srcset="img/telegram.webp" type="image/webp"><img src="img/telegram.png" alt="" draggable="false"></picture>
+                  <p>Telegram</p>
+                </div>
               </div>
               <div class="thanks__items-right"> 
                 <input class="input thanks__item-input" type="text" name="name" placeholder="Имя">
                 <input class="input thanks__item-input" type="text" name="name" placeholder="+7 (---) --- -- --">
               </div>
             </div>
+            <button class="btn thanks__btn" type="button"> <picture><source srcset="img/calc.webp" type="image/webp"><img src="img/calc.png" alt=""></picture>Получить смету и подарок </button>
           </div>
           <div class="thanks__right"><picture><source srcset="img/thanks.webp" type="image/webp"><img src="img/thanks.png" alt="" draggable="false"></picture></div>
         </div>
@@ -60,6 +77,6 @@
               </div>
             </footer>
     </div>
-    <script src="js/app.min.js?_v=20220202140230"> </script>
+    <script src="js/app.min.js?_v=20220202143217"> </script>
   </body>
 </html>
