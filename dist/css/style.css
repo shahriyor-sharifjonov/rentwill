@@ -1469,7 +1469,23 @@
 }
 
 .promise__btn {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  width: calc(100% - 30px);
+  bottom: 50px;
+}
+
+.promise__btn .light {
+  font-weight: 300;
+  margin-left: 2px;
+}
+
+.promise__btn:active {
+  bottom: 45px;
 }
 
 .promise__info {
@@ -1769,7 +1785,7 @@
   background: url("../img/steps-1.png"), #1D1D1D; }
 
 .steps__item:first-of-type {
-  background-position: 50% 50%;
+  background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
   background-size: auto auto !important;
   -o-object-fit: cover !important;
@@ -1780,7 +1796,7 @@
   background: url("../img/steps-2.png"), #1D1D1D; }
 
 .steps__item:nth-of-type(2) {
-  background-position: 50% 50%;
+  background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
   background-size: auto auto !important;
   -o-object-fit: cover !important;
@@ -1791,7 +1807,7 @@
   background: url("../img/steps-3.png"), #1D1D1D; }
 
 .steps__item:nth-of-type(3) {
-  background-position: 50% 50%;
+  background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
   background-size: auto auto !important;
   -o-object-fit: cover !important;
@@ -1802,9 +1818,9 @@
   background: url("../img/steps-4.png"), #1D1D1D; }
 
 .steps__item:nth-of-type(4) {
-  background-position: 50% 50%;
+  background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
-  background-size: auto 100% !important;
+  background-size: 100% auto !important;
   -o-object-fit: cover !important;
      object-fit: cover !important;
 }
@@ -1813,7 +1829,7 @@
   background: url("../img/steps-5.png"), #1D1D1D; }
 
 .steps__item:nth-of-type(5) {
-  background-position: 50% 50%;
+  background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
   background-size: auto auto !important;
   -o-object-fit: cover !important;
@@ -1824,7 +1840,7 @@
   background: url("../img/steps-6.png"), #1D1D1D; }
 
 .steps__item:nth-of-type(6) {
-  background-position: 50% 50%;
+  background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
   background-size: auto auto !important;
   -o-object-fit: cover !important;
@@ -2244,7 +2260,7 @@
   width: 36px;
   height: 36px;
   border: 7px solid #FFFFFF;
-  background: #FFFFFF;
+  background: #E4E4E4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 50%;
@@ -2406,7 +2422,7 @@
   width: 36px;
   height: 36px;
   border: 7px solid #FFFFFF;
-  background: #FFFFFF;
+  background: #E4E4E4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 50%;
@@ -2798,7 +2814,7 @@ a {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1170px;
   }
 }
 
@@ -2900,26 +2916,6 @@ a {
     margin-left: 20px;
     margin-right: 20px;
     max-width: calc(100% - 40px);
-  }
-
-  .promise__btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    left: 15px;
-    right: 15px;
-    width: calc(100% - 30px);
-    bottom: 50px;
-  }
-
-  .promise__btn .light {
-    font-weight: 300;
-    margin-left: 2px;
-  }
-
-  .promise__btn:active {
-    bottom: 45px;
   }
 
   .thanks {
@@ -3261,8 +3257,10 @@ a {
   }
 
   .steps__item {
-    max-width: 230px;
+    max-width: 250px;
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .cases__item_sm {
@@ -3355,7 +3353,7 @@ a {
 
   .form__item {
     width: 100% !important;
-    max-width: 300px !important;
+    max-width: 230px !important;
   }
 
   .form__btn {
@@ -3518,6 +3516,15 @@ a {
     padding: 215px 0 50px 0;
   }
 
+  .form__title {
+    font-size: 22px;
+    line-height: 130%;
+  }
+
+  .form__item {
+    max-width: 230px !important;
+  }
+
   .design__body {
     padding: 50px 15px;
   }
@@ -3653,9 +3660,12 @@ a {
     padding: 355px 0 50px 0;
   }
 
+  .steps__title {
+    font-size: 22px;
+    line-height: 130%;
+  }
+
   .steps__item {
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
   }
 

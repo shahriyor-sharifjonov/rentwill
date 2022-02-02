@@ -85,21 +85,18 @@
         }
     }
     &__btn{
-        display: none;
-        @include media(1200){
-            display: flex;
-            position: absolute;
-            left: 15px;
-            right: 15px;
-            width: calc(100% - 30px);
-            bottom: 50px;
-            .light{
-                font-weight: 300;
-                margin-left: 2px;
-            }
-            &:active{
-                bottom: 45px;
-            }
+        display: flex;
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        width: calc(100% - 30px);
+        bottom: 50px;
+        .light{
+            font-weight: 300;
+            margin-left: 2px;
+        }
+        &:active{
+            bottom: 45px;
         }
         @include media(576){
             padding: 20px 20px;

@@ -11,6 +11,10 @@
         line-height: 130%;
         text-align: center;
         color: #FFFFFF;
+        @include media(576){
+            font-size: 22px;
+            line-height: 130%;
+        }
     }
     &__wrap{
         display: flex;
@@ -32,52 +36,52 @@
         flex-direction: column;
         align-items: center;
         @include media(992){
-            max-width: 230px;
+            max-width: 250px;
             width: 50%;
-        }
-        @include media(576){
             margin-left: auto;
             margin-right: auto;
+        }
+        @include media(576){
             width: 100%;
         }
         &:first-of-type{
             background: url('../img/steps-1.png'), #1D1D1D;
-            background-position: 50% 50%;
+            background-position: 50% 50% !important;
             background-repeat: no-repeat !important;
             background-size: auto auto !important;
             object-fit: cover !important;
         }
         &:nth-of-type(2){
             background: url('../img/steps-2.png'), #1D1D1D;
-            background-position: 50% 50%;
+            background-position: 50% 50% !important;
             background-repeat: no-repeat !important;
             background-size: auto auto !important;
             object-fit: cover !important;
         }
         &:nth-of-type(3){
             background: url('../img/steps-3.png'), #1D1D1D;
-            background-position: 50% 50%;
+            background-position: 50% 50% !important;
             background-repeat: no-repeat !important;
             background-size: auto auto !important;
             object-fit: cover !important;
         }
         &:nth-of-type(4){
             background: url('../img/steps-4.png'), #1D1D1D;
-            background-position: 50% 50%;
+            background-position: 50% 50% !important;
             background-repeat: no-repeat !important;
-            background-size: auto 100%!important;
+            background-size: 100% auto !important;
             object-fit: cover !important;
         }
         &:nth-of-type(5){
             background: url('../img/steps-5.png'), #1D1D1D;
-            background-position: 50% 50%;
+            background-position: 50% 50% !important;
             background-repeat: no-repeat !important;
             background-size: auto auto !important;
             object-fit: cover !important;
         }
         &:nth-of-type(6){
             background: url('../img/steps-6.png'), #1D1D1D;
-            background-position: 50% 50%;
+            background-position: 50% 50% !important;
             background-repeat: no-repeat !important;
             background-size: auto auto !important;
             object-fit: cover !important;
