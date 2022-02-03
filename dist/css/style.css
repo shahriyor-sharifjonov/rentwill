@@ -2594,7 +2594,6 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-top: 160px;
 }
 
 .thanks__body {
@@ -2621,6 +2620,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 50px;
 }
 
 .thanks__right {
@@ -2919,7 +2919,11 @@ a {
   }
 
   .thanks {
-    padding-bottom: 100px;
+    padding-bottom: 60px;
+  }
+
+  .thanks__left {
+    padding-bottom: 0;
   }
 
   .thanks__right {
@@ -3729,8 +3733,7 @@ a {
   }
 
   .thanks {
-    padding-top: 100px;
-    padding-bottom: 60px;
+    padding-top: 50px;
   }
 
   .thanks__title {

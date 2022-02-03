@@ -1,13 +1,11 @@
 .thanks{
     display: flex;
-    justify-content: flex-end;
-    padding-top: 160px;
+    justify-content: flex-end; 
     @include media(1200){
-        padding-bottom: 100px;
+        padding-bottom: 60px;
     }
     @include media(576){
-        padding-top: 100px;
-        padding-bottom: 60px;
+        padding-top: 50px;
     }
     &__body{
         display: flex;
@@ -19,6 +17,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-bottom: 50px;
+        @include media(1200){
+            padding-bottom: 0;
+        }
     }
     &__right{
         line-height: 0;
