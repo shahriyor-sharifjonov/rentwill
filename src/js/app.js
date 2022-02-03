@@ -21,6 +21,7 @@ const quizTitle = document.querySelector('.quiz__title');
 const progress = document.querySelector('.quiz__progress-track');
 const prev = document.querySelector('.quiz__prev');
 const next = document.querySelector('.quiz__next');
+const btn = document.querySelector('.quiz__get');
 const item = document.querySelectorAll('.quiz__item');
 const check = document.querySelectorAll('.quiz__check');
 window.reloadQuiz = function(){
@@ -80,7 +81,9 @@ window.reloadQuiz = function(){
             el.classList.remove('active');
         });
         document.querySelector('.quiz__7').classList.add('active');
-        next.type = "submit"
+        prev.remove()
+        next.remove()
+        btn2.classList.add('active');
     }
 }
 reloadQuiz()
@@ -109,6 +112,7 @@ let activeQuiz2 = 1
 const quizTitle2 = document.querySelector('.quiz-2__title');
 const progress2 = document.querySelector('.quiz-2__progress-track');
 const prev2 = document.querySelector('.quiz-2__prev');
+const btn2 = document.querySelector('.quiz-2__get');
 const next2 = document.querySelector('.quiz-2__next');
 const item2 = document.querySelectorAll('.quiz-2__item');
 const check2 = document.querySelectorAll('.quiz-2__check');
@@ -169,7 +173,9 @@ window.reloadQuiz2 = function(){
             el.classList.remove('active');
         });
         document.querySelector('.quiz-2__7').classList.add('active');
-        next2.type = "submit"
+        prev2.remove()
+        next2.remove()
+        btn2.classList.add('active');
     }
 }
 reloadQuiz2()

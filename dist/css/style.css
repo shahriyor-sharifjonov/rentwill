@@ -2226,6 +2226,17 @@
   transition: 200ms ease;
 }
 
+.quiz__get {
+  display: none;
+  margin-left: auto;
+}
+
+.quiz__get.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .quiz__item {
   opacity: 0;
   visibility: hidden;
@@ -2358,6 +2369,17 @@
 .quiz-2 {
   margin-bottom: 100px;
   padding-top: 100px;
+}
+
+.quiz-2__get {
+  display: none;
+  margin-left: auto;
+}
+
+.quiz-2__get.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .quiz-2__title {

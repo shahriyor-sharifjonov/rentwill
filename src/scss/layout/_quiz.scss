@@ -28,6 +28,13 @@
             transition: 200ms ease;
         }
     }
+    &__get{
+        display: none;
+        margin-left: auto;
+        &.active{
+            display: flex;
+        }
+    }
     &__item{
         opacity: 0;
         visibility: hidden;
@@ -148,6 +155,13 @@
         @include media(576){
             margin-bottom: 50px;
             padding-top: 50px;
+        }
+        &__get{
+            display: none;
+            margin-left: auto;
+            &.active{
+                display: flex;
+            }
         }
         &__title{
             font-weight: bold;
