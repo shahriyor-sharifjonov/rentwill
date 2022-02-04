@@ -2198,6 +2198,15 @@
   margin-bottom: 100px;
 }
 
+.quiz.pb0 {
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.quiz__body.hidden {
+  display: none;
+}
+
 .quiz__title {
   font-weight: bold;
   font-size: 34px;
@@ -2369,6 +2378,14 @@
 .quiz-2 {
   margin-bottom: 100px;
   padding-top: 100px;
+}
+
+.quiz-2.pb0 {
+  margin-bottom: 0;
+}
+
+.quiz-2__body.hidden {
+  display: none;
 }
 
 .quiz-2__get {
@@ -2610,12 +2627,29 @@
 }
 
 .thanks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  display: none;
+}
+
+.thanks.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.thanks2 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: none;
+}
+
+.thanks2.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .thanks__body {
@@ -2938,6 +2972,11 @@ a {
     margin-left: 20px;
     margin-right: 20px;
     max-width: calc(100% - 40px);
+  }
+
+  .quiz-2.pb0 {
+    padding-bottom: 50px;
+    padding-top: 50px;
   }
 
   .thanks {
@@ -3512,6 +3551,10 @@ a {
     display: none;
   }
 
+  .advantages {
+    margin-bottom: 50px;
+  }
+
   .cam {
     padding: 30px 0;
   }
@@ -3709,6 +3752,7 @@ a {
 
   .quiz {
     margin-bottom: 50px;
+    padding-top: 50px;
   }
 
   .quiz__title {

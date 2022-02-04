@@ -1,7 +1,17 @@
 .quiz{
     margin-bottom: 100px;
+    &.pb0{
+        margin-bottom: 0;
+        padding-top: 0;
+    }
     @include media(576){
         margin-bottom: 50px;
+        padding-top: 50px;
+    }
+    &__body{
+        &.hidden{
+            display: none;
+        }
     }
     &__title{
         font-weight: bold;
@@ -152,9 +162,21 @@
     &-2{
         margin-bottom: 100px;
         padding-top: 100px;
+        &.pb0{
+            margin-bottom: 0;
+            @include media(1200){
+                padding-bottom: 50px;
+                padding-top: 50px;
+            }
+        }
         @include media(576){
             margin-bottom: 50px;
             padding-top: 50px;
+        }
+        &__body{
+            &.hidden{
+                display: none;
+            }
         }
         &__get{
             display: none;

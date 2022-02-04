@@ -40,8 +40,7 @@ mixin quiz()
                             .quiz__item-el-border 
                             img(src="@img/quiz-1-5.png", alt="" draggable="false")
                             .quiz__item-el-i
-                        p Другой обьект
-                
+                        p Другой обьект      
                 .quiz__item.quiz__2                    
                     .quiz__item-el.w-20 
                         .quiz__item-el-img
@@ -70,8 +69,7 @@ mixin quiz()
                             .quiz__item-el-border 
                             img(src="@img/quiz-1-4.png", alt="" draggable="false")
                             .quiz__item-el-i
-                        p Другое
-            
+                        p Другое     
                 .quiz__item.quiz__3                    
                     .quiz__item-el.w-20 
                         .quiz__item-el-img
@@ -100,8 +98,7 @@ mixin quiz()
                             .quiz__item-el-border 
                             img(src="@img/quiz-1-4.png", alt="" draggable="false")
                             .quiz__item-el-i
-                        p более 200 кв.м	
-        
+                        p более 200 кв.м	 
                 .quiz__item.quiz__4                    
                     .quiz__item-el.w-20 
                         .quiz__item-el-img
@@ -117,7 +114,6 @@ mixin quiz()
                             img(src="@img/quiz-1-2.png", alt="" draggable="false")
                             .quiz__item-el-i
                         p Нет
-        
                 .quiz__item.quiz__5                
                     .quiz__item-el.w-20 
                         .quiz__item-el-img
@@ -147,7 +143,6 @@ mixin quiz()
                             img(src="@img/quiz-1-4.png", alt="" draggable="false")
                             .quiz__item-el-i
                         p Подбор материалов не требуется (У меня всё есть)			
-            	
                 .quiz__item.quiz__6
                     .quiz__item-el.w-20 
                         .quiz__item-el-img
@@ -177,7 +172,6 @@ mixin quiz()
                             img(src="@img/quiz-1-4.png", alt="" draggable="false")
                             .quiz__item-el-i
                         p Зависит от стоимости				
-    
                 .quiz__item.quiz__7
                     .quiz__item-el.w-20 
                         .quiz__item-el-img
@@ -204,6 +198,8 @@ mixin quiz()
                 button(type='button').btn_secondary.quiz__btn.quiz__prev Назад 
                 button(type='button').btn.quiz__btn.quiz__get Получить расчет
                 button(type='button').btn.quiz__btn.quiz__next Далее 
+        include thanks 
+        +thanks
 
 
 mixin quiz-2()
@@ -249,7 +245,6 @@ mixin quiz-2()
                             img(src="@img/quiz-1-5.png", alt="" draggable="false")
                             .quiz-2__item-el-i
                         p Другой обьект
-                
                 .quiz-2__item.quiz-2__2                    
                     .quiz-2__item-el.w-20 
                         .quiz-2__item-el-img
@@ -279,7 +274,6 @@ mixin quiz-2()
                             img(src="@img/quiz-1-4.png", alt="" draggable="false")
                             .quiz-2__item-el-i
                         p Другое
-            
                 .quiz-2__item.quiz-2__3                    
                     .quiz-2__item-el.w-20 
                         .quiz-2__item-el-img
@@ -309,7 +303,6 @@ mixin quiz-2()
                             img(src="@img/quiz-1-4.png", alt="" draggable="false")
                             .quiz-2__item-el-i
                         p более 200 кв.м	
-        
                 .quiz-2__item.quiz-2__4                    
                     .quiz-2__item-el.w-20 
                         .quiz-2__item-el-img
@@ -325,7 +318,6 @@ mixin quiz-2()
                             img(src="@img/quiz-1-2.png", alt="" draggable="false")
                             .quiz-2__item-el-i
                         p Нет
-        
                 .quiz-2__item.quiz-2__5                
                     .quiz-2__item-el.w-20 
                         .quiz-2__item-el-img
@@ -354,8 +346,7 @@ mixin quiz-2()
                             .quiz-2__item-el-border 
                             img(src="@img/quiz-1-4.png", alt="" draggable="false")
                             .quiz-2__item-el-i
-                        p Подбор материалов не требуется (У меня всё есть)			
-            	
+                        p Подбор материалов не требуется (У меня всё есть)	
                 .quiz-2__item.quiz-2__6
                     .quiz-2__item-el.w-20 
                         .quiz-2__item-el-img
@@ -385,7 +376,6 @@ mixin quiz-2()
                             img(src="@img/quiz-1-4.png", alt="" draggable="false")
                             .quiz-2__item-el-i
                         p Зависит от стоимости				
-    
                 .quiz-2__item.quiz-2__7
                     .quiz-2__item-el.w-20 
                         .quiz-2__item-el-img
@@ -412,3 +402,5 @@ mixin quiz-2()
                 button(type='button').btn_secondary.quiz-2__btn.quiz-2__prev Назад 
                 button(type='button').btn.quiz-2__btn.quiz-2__get Получить расчет 
                 button(type='button').btn.quiz-2__btn.quiz-2__next Далее 
+        include thanks 
+        +thanks2

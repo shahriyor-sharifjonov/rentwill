@@ -17,11 +17,13 @@ window.popupClose = function(){
 }
 
 let activeQuiz = 1
+const quiz = document.querySelector('.quiz__body');
+const quizs = document.querySelector('.quiz');
+const thanks = document.querySelector('.thanks');
 const quizTitle = document.querySelector('.quiz__title');
 const progress = document.querySelector('.quiz__progress-track');
 const prev = document.querySelector('.quiz__prev');
 const next = document.querySelector('.quiz__next');
-const btn = document.querySelector('.quiz__get');
 const item = document.querySelectorAll('.quiz__item');
 const check = document.querySelectorAll('.quiz__check');
 window.reloadQuiz = function(){
@@ -81,9 +83,11 @@ window.reloadQuiz = function(){
             el.classList.remove('active');
         });
         document.querySelector('.quiz__7').classList.add('active');
-        prev.remove()
-        next.remove()
-        btn2.classList.add('active');
+    }else if(activeQuiz == 8){
+        console.log('fasfa');
+        thanks.classList.add('active')
+        quiz.classList.add('hidden') 
+        quizs.classList.add('pb0')
     }
 }
 reloadQuiz()
@@ -109,13 +113,15 @@ check.forEach(element => {
 
 
 let activeQuiz2 = 1
+const quiz2 = document.querySelector('.quiz-2__body');
+const quiz2s = document.querySelector('.quiz-2');
 const quizTitle2 = document.querySelector('.quiz-2__title');
 const progress2 = document.querySelector('.quiz-2__progress-track');
 const prev2 = document.querySelector('.quiz-2__prev');
-const btn2 = document.querySelector('.quiz-2__get');
 const next2 = document.querySelector('.quiz-2__next');
 const item2 = document.querySelectorAll('.quiz-2__item');
 const check2 = document.querySelectorAll('.quiz-2__check');
+const thanks2 = document.querySelector('.thanks2');
 window.reloadQuiz2 = function(){
     if(activeQuiz2 == 1){
         quizTitle2.innerHTML = '1. Где планируете ремонт?'
@@ -173,9 +179,10 @@ window.reloadQuiz2 = function(){
             el.classList.remove('active');
         });
         document.querySelector('.quiz-2__7').classList.add('active');
-        prev2.remove()
-        next2.remove()
-        btn2.classList.add('active');
+    }else if(activeQuiz2 == 8){
+        thanks2.classList.add('active')
+        quiz2.classList.add('hidden')
+        quiz2s.classList.add('pb0')
     }
 }
 reloadQuiz2()

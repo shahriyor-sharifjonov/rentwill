@@ -1,5 +1,8 @@
 .advantages{
     margin-bottom: 100px;
+    @include media(576){
+        margin-bottom: 50px;
+    }
     &__body{
         display: flex;
         align-items: center;
